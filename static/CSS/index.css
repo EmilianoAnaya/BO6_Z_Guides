@@ -1,76 +1,5 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-    --WIDTH: 75em
-}
-
-
-body{
-    background-color: #1B2C23;
-    margin: 0;
-    padding: 0;
-}
-
-/* MAIN DIV */
-#main_div{
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
-}
-
-/* HEADER */
-header{
-    background-color: #274036;
-    height: 5em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#header-logo{
-    width: 10em;
-    height: auto;
-}
-
-#header-div{
-    margin: 0 auto;
-    background-color: #274036;
-    height: 5em;
-    width: var(--WIDTH);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.link{
-    background-color: #1B2C23;
-    color: #FFFFFFFF;
-    font-family: "Kanit";
-    border-radius: 20px;
-    padding: 15px 3em 15px;
-    box-shadow: 1px 5px 10px #0B1614;
-    margin: 0 30px;
-    user-select: none;
-}
-
-.link:hover{
-    background-color: #788A66;
-}
-
-/* MAIN */
-main{
-    width: var(--WIDTH);
-    margin: 0 auto;
-    /* background-color: #33685e; */
-}
-
-
-h2{
-    font-family: "Kanit";
-    color: #A1C9C2;
-    margin-bottom: 0;
-}
 
 hr{
     border: 1px solid #777D70;
@@ -113,12 +42,4 @@ hr{
 
 .item p{
     margin: 0 4px;
-}
-
-/* FOOTER */
-footer{
-    background-color: #0B1614;
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
