@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 4em;
+    gap: 2em;
     margin: 0 auto;
     width: 95%;
     height: auto;

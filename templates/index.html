@@ -40,6 +40,14 @@
                 <div class="title_1">
                     <h2>Perks Augments</h2>
                     <hr>
+                    <div class="block_selector">
+                        {% for perk in Perks %}
+                            <a class="item">
+                                <img src="../static/resources/{{ perk.img_src }}">
+                                <p>{{ perk.name }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
                 </div>
             </main>
 

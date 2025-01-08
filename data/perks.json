@@ -1,0 +1,301 @@
+{
+    "Perks" : [
+        {
+            "name" : "Juggernog",
+            "description" : "Increases maximum health.",
+            "img_src" : "juggernog_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Probiotic",
+                    "description" : "Slightly increase maximum health with Jugger-Nog."
+                },
+                {
+                    "title" : "Turtle Shell",
+                    "description" : "Armor acts as a shield on your back, completely absorbing damage to your back. No damage mitigation when hit from the front."
+                },
+                {
+                    "title" : "Reactive Armor",
+                    "description" : "When an armor plate breaks, nearby normal enemies are stunned for a short time."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Retaliation",
+                    "description" : "Deal bonus damage while health is low."
+                },
+                {
+                    "title" : "Hardened Plates",
+                    "description" : "Armor plates have more damage mitigation."
+                },
+                {
+                    "title" : "Durable Plates",
+                    "description" : "Slightly increase armor durability."
+                }
+            ]
+        },
+        {
+            "name" : "Stamin-Up",
+            "description" : "Increase movement speed.",
+            "img_src" : "stamin_up_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Free Faller",
+                    "description" : "Become immune to fall damage."
+                },
+                {
+                    "title" : "Dasher",
+                    "description" : "Increase Tactical Sprint duration."
+                },
+                {
+                    "title" : "Stalker",
+                    "description" : "Walk faster while aiming."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Hard Target",
+                    "description" : "While Tactical Sprinting, projectile damage is reduced."
+                },
+                {
+                    "title" : "QuarterBack",
+                    "description" : "Use equipment while sprinting."
+                },
+                {
+                    "title" : "Hot Foot",
+                    "description" : "Gain a speed boost after your equipment kills an enemy."
+                }
+            ]
+        },
+        {
+            "name" : "Speed Cola",
+            "description" : "Reload weapons and replate armor faster.",
+            "img_src" : "speed_cola_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "SuperCharged",
+                    "description" : "Field Upgrades recharge a bit faster."
+                },
+                {
+                    "title" : "Classic Formula",
+                    "description" : "Reload speed is even faster."
+                },
+                {
+                    "title" : "Phantom Reload",
+                    "description" : "Weapon magazines are slowly refilled over time."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Speedy Roulette",
+                    "description" : "The Mystery Box settles much faster."
+                },
+                {
+                    "title" : "Quick Swap",
+                    "description" : "Swap weapons faster."
+                },
+                {
+                    "title" : "Fast Pitcher",
+                    "description" : "Deploy equipment faster."
+                }
+            ]
+        },
+        {
+            "name" : "Deadshot Daiquiri",
+            "description" : "Drink to improve ADS precision and increase critical damage.",
+            "img_src" : "deadshot_daiquiri_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Dead Head",
+                    "description" : "Further increase in critical damage."
+                },
+                {
+                    "title" : "Dead First",
+                    "description" : "Deal double critical damage if an enemy is at full health."
+                },
+                {
+                    "title" : "Dead Again",
+                    "description" : "Critical hits have a chance of adding a bullet to your magazine."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Dead Break",
+                    "description" : "Increase damage to armor pieces."
+                },
+                {
+                    "title" : "Dead Draw",
+                    "description" : "Reduce hip-fire spread."
+                },
+                {
+                    "title" : "Dead Set",
+                    "description" : "Reduce gun movement while performing advanced movement."
+                }
+            ]
+        },
+        {
+            "name" : "Quick Revive",
+            "description" : "Recover health and revive allies faster.",
+            "img_src" : "quick_revive_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "EMT",
+                    "description" : "Reviving an ally allows them to keep all of the Perks on their bleed-out bar."
+                },
+                {
+                    "title" : "Equivalent Exchange",
+                    "description" : "Killing an enemy while downed will revive you and remove Quick Revive. This can be done up to three times."
+                },
+                {
+                    "title" : "Dying Wish",
+                    "description" : "On lethal damage, become immune to all damage for two seconds and keep one health. Quick Revive is removed on use."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Swift Recovery",
+                    "description" : "Reviving an ally increases both of your movement speeds for a short time."
+                },
+                {
+                    "title" : "Karmic Return",
+                    "description" : "Reviving an ally heals you to full health."
+                },
+                {
+                    "title" : "Slow Death",
+                    "description" : "Increase your time in last stand."
+                }
+            ]
+        },
+        {
+            "name" : "Elemental Pop",
+            "description" : "Attacks can trigger random Ammo Mods.",
+            "img_src" : "elemental_pop_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Citrus Focus",
+                    "description" : "If a weapon has an Ammo Mod applied, Elemental Pop will only activate that one."
+                },
+                {
+                    "title" : "Imperil Peach",
+                    "description" : "Enemies that hit you have a chance to trigger a random Ammo Mod."
+                },
+                {
+                    "title" : "Electric Cherry",
+                    "description" : "Reloading creates an electric damage discharge that damages and stuns nearby normal enemies. The emptier the magazine, the stronger the damage."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Vulnera Bean",
+                    "description" : "Slightly increase enemy elemental weakness damage."
+                },
+                {
+                    "title" : "Pineapple Blast",
+                    "description" : "Equipment can also trigger a random Ammo Mod."
+                },
+                {
+                    "title" : "Chill Berry",
+                    "description" : "Slightly reduce all Ammo Mod cooldowns."
+                }
+            ]
+        },
+        {
+            "name" : "PHD Flopper",
+            "description" : "Explosive dive to prone and immunity to self-inflicted explosive damage.",
+            "img_src" : "phd_flopper_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Gravity MD",
+                    "description" : "Just falling from heights creates explosions."
+                },
+                {
+                    "title" : "Dr RAM",
+                    "description" : "Tactical Sprint knocks down and damages base zombies."
+                },
+                {
+                    "title" : "PHD Slider",
+                    "description" : "Sliding into enemies triggers explosions."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Environmentalist",
+                    "description" : "Become immune to environmental damage while sliding."
+                },
+                {
+                    "title" : "EOD Technician",
+                    "description" : "Slightly reduce height and distance requirements for explosions."
+                },
+                {
+                    "title" : "Tribologist",
+                    "description" : "Sliding distance and speed are increased."
+                }
+            ]
+        },
+        {
+            "name" : "Melee Macchiato",
+            "description" : "Replace weapon gun butt with a deadly punch.",
+            "img_src" : "melee_macchiato_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Expresso",
+                    "description" : "All melee attacks are slightly faster."
+                },
+                {
+                    "title" : "Vampiric Extraction",
+                    "description" : "Melee attacks heal a small amount of your health."
+                },
+                {
+                    "title" : "Triple Shot",
+                    "description" : "Your punch can hit multiple enemies at once."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Stick m' Move",
+                    "description" : "Backpedal speed is increased after a successful melee attack."
+                },
+                {
+                    "title" : "Strenght Training",
+                    "description" : "Your punch can one-hit kill normal enemies for longer."
+                },
+                {
+                    "title" : "Hidden Impact",
+                    "description" : "Melee kills reload a portion of your held weapon."
+                }
+            ]
+        },
+        {
+            "name" : "Vulture Aid",
+            "description" : "Increase the variety of loot dropped by enemies",
+            "img_src" : "vulture_aid_perk.png",
+            "major_augments" : [
+                {
+                    "title" : "Fetid Upgr-aid",
+                    "description" : "On death, zombies have a chance to create a gas cloud that charges your Field Upgrade."
+                },
+                {
+                    "title" : "Smell of Death",
+                    "description" : "On death, zombies have a chance to create a gas cloud that conceals you while standing in it."
+                },
+                {
+                    "title" : "Parting Gift",
+                    "description" : "Vulture Aid ammo drops give more ammo to Wonder Weapons."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Condor's Reach",
+                    "description" : "Auto-pickup loot from farther away."
+                },
+                {
+                    "title" : "Carrion Luggage",
+                    "description" : "Critical kills have a chance to drop extra Salvage."
+                },
+                {
+                    "title" : "Picky Eater",
+                    "description" : "On death, zombies have a higher chance of dropping your current equipment."
+                }
+            ]
+        }
+    ]
+}
