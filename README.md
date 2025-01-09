@@ -10,3 +10,8 @@ A personal Flask project that contains guides discovered by the BO6 Zombies Comm
 <div align="center">
   <img src="https://github.com/user-attachments/assets/2631933b-a116-46d2-90cf-e26e187116ad" alt="Maps Page Design">
 </div>
+
+## Augments Screen for Perks, Ammo Mods and Field Upgrades
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/2b25450d-dda6-4c2c-9292-5f67b3bf496f" alt="Augments Screen for Perks, Ammo Mods and Field Upgrades"/>
+</div>
