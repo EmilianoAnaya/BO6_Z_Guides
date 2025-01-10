@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Augments</title>
+        <link rel="stylesheet" href="../static/CSS/base.css">
+        <link rel="stylesheet" href="../static/CSS/augments.css">
+    </head>
+
+    <body>
+        <div id="main_div">
+            <header>
+                {% include 'header.html' %}
+            </header>
+
+            <main>
+                <h1>{{ item.name }}</h1>
+                <hr>
+                <div id="sub-menu">
+                    <img src="../static/resources/perks/wallpaper_perks/{{ item.img_wallpaper }}">
+                    <div id="description">
+                        <p>{{ item.description }}</p>
+                        <hr>
+                    </div>
+                    
+                    <div id="augments-container">
+                        <div id="major-augments" class="augments-box">
+                            <div class="augments-title">
+                                <h3>Major Augments</h3>
+                                <hr>
+                            </div>
+                            <div class="augment-description">
+                                <ul>
+                                    {% for augment in item.major_augments %}    
+                                    <li>
+                                        <strong>{{ augment.title }}</strong><br>
+                                        <span>{{ augment.description }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="minor-augments" class="augments-box">
+                            <div class="augments-title">
+                                <h3>Minor Augments</h3>
+                                <hr>
+                            </div>
+                            <div class="augment-description">
+                                <ul>
+                                    {% for augment in item.minor_augments %}   
+                                    <li>
+                                        <strong>{{ augment.title }}</strong><br>
+                                        <span>{{ augment.description }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                {% include 'footer.html' %}
+            </footer>
+        </div>
+    </body>
+
+
+</html>

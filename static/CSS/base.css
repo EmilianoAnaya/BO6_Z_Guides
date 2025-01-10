@@ -54,14 +54,15 @@ h1{
     color: #A1C9C2;
     margin-bottom: 0;
     font-size: 3em;
+    margin-left: 1em;
 }
 
 h2{
     font-family: var(--MAIN-FONT);
     color: #A1C9C2;
     margin-bottom: 0;
+    margin-left: 1em;
 }
-
 
 /* PARAGRAPH */
 p{

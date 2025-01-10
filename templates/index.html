@@ -38,12 +38,12 @@
                     </div>
                 </div>
                 <div class="title_1">
-                    <h2>Perks Augments</h2>
+                    <h2>Perks</h2>
                     <hr>
                     <div class="block_selector">
                         {% for perk in Perks %}
-                            <a class="item">
-                                <img src="../static/resources/{{ perk.img_src }}">
+                            <a class="item" href="{{ url_for('augments', category='perks', id=perk.id) }}">
+                                <img src="../static/resources/perks/perks_logos/{{ perk.img_logo }}">
                                 <p>{{ perk.name }}</p>
                             </a>
                         {% endfor %}

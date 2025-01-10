@@ -1,0 +1,105 @@
+
+/* DIVS AND TOOLS */
+
+#sub-menu{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-menu img{
+    object-fit: cover;
+    width: 100%;
+    height: 23em;
+}
+
+#description{
+    width: 95%;
+}
+
+#description p{
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+#description hr{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+#augments-container{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.augments-box{
+    width: 45%;
+    min-height: 30em;
+    border: solid black 3px;
+    border-radius: 15px;
+    padding: 0 25px;
+}
+
+#major-augments{
+    background-color: #1F596F;
+}
+
+#minor-augments{
+    background-color: #726926;
+}
+
+.augments-title{
+    text-align: center;
+}
+
+.augments-title hr{
+    border: solid 1px white;
+}
+
+.augment-description{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* LIST ELEMENTS */
+
+ul{
+    padding-left: 20px;
+}
+
+li{
+    margin: 20px 0;
+}
+
+li::marker{
+    color: white;
+}
+
+/* TEXT ELEMENTS */
+
+h3{
+    font-size: 1.7em;
+    font-family: var(--MAIN-FONT);
+    margin-bottom: 0;
+    color: white;
+}
+
+strong{
+    font-family: var(--MAIN-FONT);
+    color: white;
+    font-size: 1.5em;
+}
+
+span{
+    font-family: var(--MAIN-FONT);
+    color: white;
+    font-size: 1.3em;
+    font-weight: 300;
+}

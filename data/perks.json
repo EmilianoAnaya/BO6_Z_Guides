@@ -1,9 +1,11 @@
 {
-    "Perks" : [
+    "perks" : [
         {
+            "id" : 1,
             "name" : "Juggernog",
             "description" : "Increases maximum health.",
-            "img_src" : "juggernog_perk.png",
+            "img_logo" : "juggernog_perk.png",
+            "img_wallpaper" : "juggernog.jpg",
             "major_augments" : [
                 {
                     "title" : "Probiotic",
@@ -34,9 +36,11 @@
             ]
         },
         {
+            "id" : 2,
             "name" : "Stamin-Up",
             "description" : "Increase movement speed.",
-            "img_src" : "stamin_up_perk.png",
+            "img_logo" : "stamin_up_perk.png",
+            "img_wallpaper" : "stamin_up.jpg",
             "major_augments" : [
                 {
                     "title" : "Free Faller",
@@ -67,9 +71,11 @@
             ]
         },
         {
+            "id" : 3,
             "name" : "Speed Cola",
             "description" : "Reload weapons and replate armor faster.",
-            "img_src" : "speed_cola_perk.png",
+            "img_logo" : "speed_cola_perk.png",
+            "img_wallpaper" : "speed_cola.jpg",
             "major_augments" : [
                 {
                     "title" : "SuperCharged",
@@ -100,9 +106,11 @@
             ]
         },
         {
+            "id" : 4,
             "name" : "Deadshot Daiquiri",
             "description" : "Drink to improve ADS precision and increase critical damage.",
-            "img_src" : "deadshot_daiquiri_perk.png",
+            "img_logo" : "deadshot_daiquiri_perk.png",
+            "img_wallpaper" : "deadshot_daiquiri.jpg",
             "major_augments" : [
                 {
                     "title" : "Dead Head",
@@ -133,9 +141,11 @@
             ]
         },
         {
+            "id" : 5,
             "name" : "Quick Revive",
             "description" : "Recover health and revive allies faster.",
-            "img_src" : "quick_revive_perk.png",
+            "img_logo" : "quick_revive_perk.png",
+            "img_wallpaper" : "quick_revive.jpg",
             "major_augments" : [
                 {
                     "title" : "EMT",
@@ -166,9 +176,11 @@
             ]
         },
         {
+            "id" : 6,
             "name" : "Elemental Pop",
             "description" : "Attacks can trigger random Ammo Mods.",
-            "img_src" : "elemental_pop_perk.png",
+            "img_logo" : "elemental_pop_perk.png",
+            "img_wallpaper" : "elemental_pop.jpg",
             "major_augments" : [
                 {
                     "title" : "Citrus Focus",
@@ -199,9 +211,11 @@
             ]
         },
         {
+            "id" : 7,
             "name" : "PHD Flopper",
             "description" : "Explosive dive to prone and immunity to self-inflicted explosive damage.",
-            "img_src" : "phd_flopper_perk.png",
+            "img_logo" : "phd_flopper_perk.png",
+            "img_wallpaper" : "phd_flopper.jpg",
             "major_augments" : [
                 {
                     "title" : "Gravity MD",
@@ -232,9 +246,11 @@
             ]
         },
         {
+            "id" : 8,
             "name" : "Melee Macchiato",
             "description" : "Replace weapon gun butt with a deadly punch.",
-            "img_src" : "melee_macchiato_perk.png",
+            "img_logo" : "melee_macchiato_perk.png",
+            "img_wallpaper" : "melee_macchiato.jpg",
             "major_augments" : [
                 {
                     "title" : "Expresso",
@@ -265,9 +281,11 @@
             ]
         },
         {
+            "id" : 9,
             "name" : "Vulture Aid",
             "description" : "Increase the variety of loot dropped by enemies",
-            "img_src" : "vulture_aid_perk.png",
+            "img_logo" : "vulture_aid_perk.png",
+            "img_wallpaper" : "vulture_aid.jpg",
             "major_augments" : [
                 {
                     "title" : "Fetid Upgr-aid",
