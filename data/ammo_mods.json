@@ -1,0 +1,214 @@
+{
+    "ammo_mods" : [
+        {
+            "id" : 1,
+            "name" : "Brain Rot",
+            "description" : "Bullets deal toxic damage. Each bullet has a chance to temporarily turn a normal or special enemy into an ally.",
+            "img_logo" : "brain_rot.png",
+            "img_wallpaper" : "brain_rot.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Plague",
+                    "description" : "The charmed enemy has a chance to turn other enemies."
+                },
+                {
+                    "title" : "Pheromone",
+                    "description" : "The charmed enemy distracts nearby normal and special enemies for a short time."
+                },
+                {
+                    "title" : "Big Game",
+                    "description" : "Brain Rot can charm elite enemies."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Extension",
+                    "description" : "Brain Rot duration is slightly increased."
+                },
+                {
+                    "title" : "Haste",
+                    "description" : "Armor plates have more damage mitigation."
+                },
+                {
+                    "title" : "Explosive",
+                    "description" : "Brain Rot cooldown is slightly reduced."
+                }
+            ]
+        },
+        {
+            "id" : 2,
+            "name" : "Cryo Freeze",
+            "description" : "Bullets deal frost damage. Each bullet has a chance to slow a normal or special enemy and increase the damage they receive.",
+            "img_logo" : "cryo_freeze.png",
+            "img_wallpaper" : "cryo_freeze.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Big Game",
+                    "description" : "Cryo Freeze can slow elite enemies."
+                },
+                {
+                    "title" : "Ice Cloud",
+                    "description" : "Enemies that are killed while frozen may leave a cloud that slows enemies."
+                },
+                {
+                    "title" : "Frozen Staff",
+                    "description" : "Enemies are frozen in place."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Extension",
+                    "description" : "Slightly increase the slow duration."
+                },
+                {
+                    "title" : "Freezer Burn",
+                    "description" : "Slightly increase damage to frozen enemies."
+                },
+                {
+                    "title" : "Liquid Nitrogen",
+                    "description" : "Significantly increase your chance for Cryo Freeze to activate."
+                }
+            ]
+        },
+        {
+            "id" : 3,
+            "name" : "Dead Wire",
+            "description" : "Bullets deal electric damage. Each bullet has a chance to stun a normal or special enemy, causing them to generate an electric damage field.",
+            "img_logo" : "dead_wire.png",
+            "img_wallpaper" : "dead_wire.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Chain Lighting",
+                    "description" : "The stunned enemy can spread the stun to others."
+                },
+                {
+                    "title" : "Big Game",
+                    "description" : "Dead Wire can stun elite enemies."
+                },
+                {
+                    "title" : "Lighting Strike",
+                    "description" : "A bolt of lightning strikes from above, stunning all normal and special enemies in the area."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "High Voltage",
+                    "description" : "Dead Wire deals slightly more damage."
+                },
+                {
+                    "title" : "Haste",
+                    "description" : "Dead Wire cooldown is slightly reduced."
+                },
+                {
+                    "title" : "Extension",
+                    "description" : "The stun and electric field last longer."
+                }
+            ]
+        },
+        {
+            "id" : 4,
+            "name" : "Napalm Burst",
+            "description" : "Bullets deal fire damage. Each bullet has a chance to apply a burn effect on normal and special enemies, dealing damage over time.",
+            "img_logo" : "napalm_burst.png",
+            "img_wallpaper" : "napalm_burst.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Big Game",
+                    "description" : "Napalm Burst can burn elite enemies."
+                },
+                {
+                    "title" : "Thermite",
+                    "description" : "Increase burn effect damage."
+                },
+                {
+                    "title" : "Firebomb",
+                    "description" : "Increase the burn duration."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Extension",
+                    "description" : "Increase the burn duration."
+                },
+                {
+                    "title" : "Incendiary",
+                    "description" : "Each damage tick has a small chance to spread to a nearby enemy."
+                },
+                {
+                    "title" : "Contact Burn",
+                    "description" : "Initial burn effect deals more damage."
+                }
+            ]
+        },
+        {
+            "id" : 5,
+            "name" : "Shadow Rift",
+            "description" : "Bullets deal shadow damage. Each bullet has a chance to spawn a black hole on a normal or special enemy, warping away those nearby and dropping some from the air at lethal speed.",
+            "img_logo" : "shadow_rift.png",
+            "img_wallpaper" : "shadow_rift.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Big Game",
+                    "description" : "Shadow Rift can activate on elite enemies."
+                },
+                {
+                    "title" : "Topple Danger",
+                    "description" : "Warp one enemy that deals shadow damage to others."
+                },
+                {
+                    "title" : "Explosive Rain",
+                    "description" : "Enemies that are dropped from portals will explode on contact with the ground."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Haste",
+                    "description" : "Shadow Rift cooldown is reduced."
+                },
+                {
+                    "title" : "Targeted",
+                    "description" : "Dropped enemies will fall on other enemies."
+                },
+                {
+                    "title" : "Supermassive",
+                    "description" : "The singularity's lethal radius is increased and can kill more enemies."
+                }
+            ]
+        },
+        {
+            "id" : 6,
+            "name" : "Light Mend",
+            "description" : "Each bullet has a chance to transform a normal or Special enemy's health into a healing glyph that moves to nearby injured allies.",
+            "img_logo" : "light_mend.png",
+            "img_wallpaper" : "light_mend.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Antibiotic",
+                    "description" : "The healing glyph now damages enemies that touch it, but its lifetime is reduced."
+                },
+                {
+                    "title" : "Big Game",
+                    "description" : "Light Mend can activate on Elite enemies, dropping three more healing glyphs."
+                },
+                {
+                    "title" : "Dual Action",
+                    "description" : "Consuming a healing glyph will temporarily allow you to heal faster."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Longer Life",
+                    "description" : "The healing glyph’s lifetime is increased."
+                },
+                {
+                    "title" : "Extra Strength",
+                    "description" : "The healing glyph replenishes more health when consumed."
+                },
+                {
+                    "title" : "Express Remedy",
+                    "description" : "Increase the range that the glyph will move to an ally."
+                }
+            ]
+        }
+    ]
+}

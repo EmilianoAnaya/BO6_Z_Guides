@@ -5,15 +5,37 @@ from flask import Flask, render_template, url_for, request, redirect
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    with open("data/perks.json", 'r') as f:
+
+ERROR_MESSAGES:dict = {
+    400 : "Bad Request",
+    404 : "Page not Found :(",
+    403 : "Forbidden"
+}
+
+ERROR_CODE_STATUS: dict = {
+    FileNotFoundError : 400,
+    UnboundLocalError : 400,
+    ValueError : 400
+}
+
+def get_category_data(category:str) -> json:
+    with open(f"data/{category}.json",'r') as f:
         data = json.load(f)
     
-    Perks: list = data["perks"]
+    return data[f"{category}"]
+
+@app.route("/")
+def home():
+    Field_Upgrades: list = get_category_data("field_upgrades")
+    Field_Upgrades.reverse()
+
+    Ammo_Mods: list = get_category_data("ammo_mods")
+    Ammo_Mods.reverse()
+    
+    Perks: list = get_category_data("perks")
     Perks.reverse()
 
-    return render_template("index.html", Perks=Perks)
+    return render_template("index.html", Perks=Perks, Ammo_Mods=Ammo_Mods, Field_Upgrades=Field_Upgrades)
 
 @app.route("/about")
 def about():
@@ -21,37 +43,26 @@ def about():
 
 @app.route("/<category>/<id>")
 def augments(category, id):
-    with open(f"data/{category}.json",'r') as f:
-        data = json.load(f)
-    elements = data[f"{category}"]
+    category = category
+    
+    elements = get_category_data(category)
+
     for element in elements:
         if(element["id"] == int(id)):
             item = element
-    return render_template("augments.html", item=item)
+
+    return render_template("augments.html", item=item, category=category)
 
 @app.route("/error/<id_error>")
 def error_handler(id_error):
-    error_messages:dict = {
-        400 : "Bad Request",
-        404 : "Page not Found :("
-    }
-    try:
-        msg = error_messages.get(int(id_error))
-        
-    except ValueError:
-        msg = "Unauthorized"
-
+    msg = ERROR_MESSAGES.get(int(id_error))
+    if msg == None:
+        msg = "Unauthorized" 
     return render_template("error.html", msg=msg)
 
 @app.errorhandler(Exception)
 def exception_hanlder(e):
-    error_status_codes: dict = {
-        FileNotFoundError : 400,
-        UnboundLocalError : 400,
-    }
-
-    id_error = error_status_codes.get(type(e))
-
+    id_error = ERROR_CODE_STATUS.get(type(e))
     return redirect(url_for('error_handler',id_error=id_error))
 
 @app.errorhandler(404)

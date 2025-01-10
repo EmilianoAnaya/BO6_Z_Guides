@@ -43,8 +43,32 @@
                     <div class="block_selector">
                         {% for perk in Perks %}
                             <a class="item" href="{{ url_for('augments', category='perks', id=perk.id) }}">
-                                <img src="../static/resources/perks/perks_logos/{{ perk.img_logo }}">
+                                <img src="../static/resources/perks/logo/{{ perk.img_logo }}">
                                 <p>{{ perk.name }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="title_1">
+                    <h2>Ammo Mods</h2>
+                    <hr>
+                    <div class="block_selector">
+                        {% for ammo_mod in Ammo_Mods %}
+                            <a class="item" href="{{ url_for('augments', category='ammo_mods', id=ammo_mod.id) }}">
+                                <img src="../static/resources/ammo_mods/logo/{{ ammo_mod.img_logo }}">
+                                <p>{{ ammo_mod.name }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="title_1">
+                    <h2>Field Upgrades</h2>
+                    <hr>
+                    <div class="block_selector">
+                        {% for field_upgrade in Field_Upgrades %}
+                            <a class="item" href="{{ url_for('augments', category='field_upgrades', id=field_upgrade.id) }}">
+                                <img src="../static/resources/field_upgrades/logo/{{ field_upgrade.img_logo }}">
+                                <p>{{ field_upgrade.name }}</p>
                             </a>
                         {% endfor %}
                     </div>
