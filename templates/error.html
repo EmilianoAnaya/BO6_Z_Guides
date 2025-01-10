@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Error!</title>
+        <link rel="stylesheet" href="../static/CSS/base.css">
+        <link rel="stylesheet" href="../static/CSS/error.css">
+    </head>
+
+    <body>
+        <div id="main_div">
+            <header>
+                {% include 'header.html' %}
+            </header>
+
+            <main>
+                <div id="main-message">
+                    <div id="error-warning">
+                        <h1>ERROR!</h1>
+                        <hr>
+                    </div>
+                    <p>{{ msg }}</p>
+                    <a class="link" href="{{ url_for('home') }}">
+                        Return to Home
+                    </a>
+                </div>
+            </main>
+            
+            <footer>
+                {% include 'footer.html' %}
+            </footer>
+        </div>
+    </body>
+
+</html>

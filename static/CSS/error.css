@@ -1,0 +1,52 @@
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 40em;
+    height: 20em;
+    text-align: center;
+}
+
+#error-warning{
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+    font-size: 7em
+}
+
+hr{
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    font-size: larger;
+}
+
+.link{
+    background-color: #1B2C23;
+    color: #FFFFFFFF;
+    font-family: "Kanit";
+    border-radius: 20px;
+    padding: 15px 3em 15px;
+    box-shadow: 1px 5px 10px #0B1614;
+    margin: 0 30px;
+    user-select: none;
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: #788A66;
+}

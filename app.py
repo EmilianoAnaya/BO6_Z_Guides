@@ -29,11 +29,35 @@ def augments(category, id):
             item = element
     return render_template("augments.html", item=item)
 
+@app.route("/error/<id_error>")
+def error_handler(id_error):
+    error_messages:dict = {
+        400 : "Bad Request",
+        404 : "Page not Found :("
+    }
+    try:
+        msg = error_messages.get(int(id_error))
+        
+    except ValueError:
+        msg = "Unauthorized"
+
+    return render_template("error.html", msg=msg)
+
+@app.errorhandler(Exception)
+def exception_hanlder(e):
+    error_status_codes: dict = {
+        FileNotFoundError : 400,
+        UnboundLocalError : 400,
+    }
+
+    id_error = error_status_codes.get(type(e))
+
+    return redirect(url_for('error_handler',id_error=id_error))
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return 'Page Not Found :(', 404
-
+    id_error=404
+    return redirect(url_for('error_handler',id_error=id_error))
 
 if __name__ == "__main__":
     app.run(debug=True)
