@@ -4,6 +4,7 @@
             "id" : 1,
             "name" : "Juggernog",
             "description" : "Increases maximum health.",
+            "category" : "perks",
             "img_logo" : "juggernog_perk.png",
             "img_wallpaper" : "juggernog.jpg",
             "major_augments" : [
@@ -39,6 +40,7 @@
             "id" : 2,
             "name" : "Stamin-Up",
             "description" : "Increase movement speed.",
+            "category" : "perks",
             "img_logo" : "stamin_up_perk.png",
             "img_wallpaper" : "stamin_up.jpg",
             "major_augments" : [
@@ -74,6 +76,7 @@
             "id" : 3,
             "name" : "Speed Cola",
             "description" : "Reload weapons and replate armor faster.",
+            "category" : "perks",
             "img_logo" : "speed_cola_perk.png",
             "img_wallpaper" : "speed_cola.jpg",
             "major_augments" : [
@@ -109,6 +112,7 @@
             "id" : 4,
             "name" : "Deadshot Daiquiri",
             "description" : "Drink to improve ADS precision and increase critical damage.",
+            "category" : "perks",
             "img_logo" : "deadshot_daiquiri_perk.png",
             "img_wallpaper" : "deadshot_daiquiri.jpg",
             "major_augments" : [
@@ -144,6 +148,7 @@
             "id" : 5,
             "name" : "Quick Revive",
             "description" : "Recover health and revive allies faster.",
+            "category" : "perks",
             "img_logo" : "quick_revive_perk.png",
             "img_wallpaper" : "quick_revive.jpg",
             "major_augments" : [
@@ -179,6 +184,7 @@
             "id" : 6,
             "name" : "Elemental Pop",
             "description" : "Attacks can trigger random Ammo Mods.",
+            "category" : "perks",
             "img_logo" : "elemental_pop_perk.png",
             "img_wallpaper" : "elemental_pop.jpg",
             "major_augments" : [
@@ -214,6 +220,7 @@
             "id" : 7,
             "name" : "PHD Flopper",
             "description" : "Explosive dive to prone and immunity to self-inflicted explosive damage.",
+            "category" : "perks",
             "img_logo" : "phd_flopper_perk.png",
             "img_wallpaper" : "phd_flopper.jpg",
             "major_augments" : [
@@ -249,6 +256,7 @@
             "id" : 8,
             "name" : "Melee Macchiato",
             "description" : "Replace weapon gun butt with a deadly punch.",
+            "category" : "perks",
             "img_logo" : "melee_macchiato_perk.png",
             "img_wallpaper" : "melee_macchiato.jpg",
             "major_augments" : [
@@ -284,6 +292,7 @@
             "id" : 9,
             "name" : "Vulture Aid",
             "description" : "Increase the variety of loot dropped by enemies",
+            "category" : "perks",
             "img_logo" : "vulture_aid_perk.png",
             "img_wallpaper" : "vulture_aid.jpg",
             "major_augments" : [

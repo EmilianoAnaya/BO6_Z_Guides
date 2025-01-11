@@ -4,6 +4,7 @@
             "id" : 1,
             "name" : "Aether Shroud",
             "description" : "Phase into the Dark Aether and become temporarily hidden from enemy detection.",
+            "category" : "field_upgrades",
             "img_logo" : "aether_shroud.png",
             "img_wallpaper" : "aether_shroud.jpg",
             "major_augments" : [
@@ -39,6 +40,7 @@
             "id" : 2,
             "name" : "Dark Flare",
             "description" : "Phase into the Dark Aether and become temporarily hidden from enemy detection.",
+            "category" : "field_upgrades",
             "img_logo" : "dark_flare.png",
             "img_wallpaper" : "dark_flare.jpg",
             "major_augments" : [
@@ -74,6 +76,7 @@
             "id" : 3,
             "name" : "Frenzied Guard",
             "description" : "Repair armor to full and force all enemies in the area to temporarily target you. Armor takes all damage during this time.",
+            "category" : "field_upgrades",
             "img_logo" : "frenzied_guard.png",
             "img_wallpaper" : "frenzied_guard.jpg",
             "major_augments" : [
@@ -109,6 +112,7 @@
             "id" : 4,
             "name" : "Healing Aura",
             "description" : "Heal all nearby players immediately.",
+            "category" : "field_upgrades",
             "img_logo" : "healing_aura.png",
             "img_wallpaper" : "healing_aura.jpg",
             "major_augments" : [
@@ -144,6 +148,7 @@
             "id" : 5,
             "name" : "Energy Mine",
             "description" : "Create a mine of pure energy that detonates three times, dealing lethal electric damage.",
+            "category" : "field_upgrades",
             "img_logo" : "energy_mine.png",
             "img_wallpaper" : "energy_mine.jpg",
             "major_augments" : [
@@ -179,6 +184,7 @@
             "id" : 6,
             "name" : "Tesla Storm",
             "description" : "For 10 seconds, lightning connects to other players, stunning and damaging normal enemies.",
+            "category" : "field_upgrades",
             "img_logo" : "tesla_storm.png",
             "img_wallpaper" : "tesla_storm.jpg",
             "major_augments" : [

@@ -1,5 +1,5 @@
 import json
-from random import choice, sample
+from random import choice, sample, shuffle
 from flask import Flask, render_template, url_for, request, redirect
 
 
@@ -23,21 +23,26 @@ ERROR_CODE_STATUS: dict = {
     ValueError : 400
 }
 
-def get_sample_items(sub_category: str, sample_size:int) -> list:
-    items = get_category_data(sub_category)
-    item_sample = sample(items,sample_size)
-    return item_sample
-
-def get_random_category(category: str) -> str:
-    categories = CATEGORIES[:]
-    categories.remove(category)
-    return choice(categories)
-
 def get_category_data(category:str) -> json:
     with open(f"data/{category}.json",'r') as f:
         data = json.load(f)
     
     return data[f"{category}"]
+
+def get_sample_items(sub_category: list, sample_size:int) -> list:
+    temporal_items = []
+    for category in sub_category:
+        items = get_category_data(category)
+        for item in items:
+            temporal_items.append(item)
+
+    items_sample = sample(temporal_items,sample_size)
+    return items_sample
+
+def get_random_category(category: str) -> list[str,str]:
+    categories = CATEGORIES[:]
+    categories.remove(category)
+    return categories
 
 @app.route("/")
 def home():
@@ -66,9 +71,9 @@ def augments(category, id):
         if(element["id"] == id):
             item = element
 
-    sub_category = get_random_category(category)
-    items = get_sample_items(sub_category,4)
-    return render_template("augments.html", item=item, category=category, sub_category=sub_category, items=items)
+    sub_categories = get_random_category(category)
+    adittional_items = get_sample_items(sub_categories,4)
+    return render_template("augments.html", item=item, category=category, adittional_items=adittional_items)
 
 @app.route("/error/<id_error>")
 def error_handler(id_error):

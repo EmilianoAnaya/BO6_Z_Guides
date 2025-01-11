@@ -4,6 +4,7 @@
             "id" : 1,
             "name" : "Brain Rot",
             "description" : "Bullets deal toxic damage. Each bullet has a chance to temporarily turn a normal or special enemy into an ally.",
+            "category" : "ammo_mods",
             "img_logo" : "brain_rot.png",
             "img_wallpaper" : "brain_rot.jpg",
             "major_augments" : [
@@ -39,6 +40,7 @@
             "id" : 2,
             "name" : "Cryo Freeze",
             "description" : "Bullets deal frost damage. Each bullet has a chance to slow a normal or special enemy and increase the damage they receive.",
+            "category" : "ammo_mods",
             "img_logo" : "cryo_freeze.png",
             "img_wallpaper" : "cryo_freeze.jpg",
             "major_augments" : [
@@ -74,6 +76,7 @@
             "id" : 3,
             "name" : "Dead Wire",
             "description" : "Bullets deal electric damage. Each bullet has a chance to stun a normal or special enemy, causing them to generate an electric damage field.",
+            "category" : "ammo_mods",
             "img_logo" : "dead_wire.png",
             "img_wallpaper" : "dead_wire.jpg",
             "major_augments" : [
@@ -109,6 +112,7 @@
             "id" : 4,
             "name" : "Napalm Burst",
             "description" : "Bullets deal fire damage. Each bullet has a chance to apply a burn effect on normal and special enemies, dealing damage over time.",
+            "category" : "ammo_mods",
             "img_logo" : "napalm_burst.png",
             "img_wallpaper" : "napalm_burst.jpg",
             "major_augments" : [
@@ -144,6 +148,7 @@
             "id" : 5,
             "name" : "Shadow Rift",
             "description" : "Bullets deal shadow damage. Each bullet has a chance to spawn a black hole on a normal or special enemy, warping away those nearby and dropping some from the air at lethal speed.",
+            "category" : "ammo_mods",
             "img_logo" : "shadow_rift.png",
             "img_wallpaper" : "shadow_rift.jpg",
             "major_augments" : [
@@ -179,6 +184,7 @@
             "id" : 6,
             "name" : "Light Mend",
             "description" : "Each bullet has a chance to transform a normal or Special enemy's health into a healing glyph that moves to nearby injured allies.",
+            "category" : "ammo_mods",
             "img_logo" : "light_mend.png",
             "img_wallpaper" : "light_mend.jpg",
             "major_augments" : [
