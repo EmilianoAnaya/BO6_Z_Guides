@@ -1,10 +1,15 @@
 import json
-import werkzeug
+from random import choice, sample
 from flask import Flask, render_template, url_for, request, redirect
 
 
 app = Flask(__name__)
 
+CATEGORIES = [
+    "perks",
+    "ammo_mods",
+    "field_upgrades"
+]
 
 ERROR_MESSAGES:dict = {
     400 : "Bad Request",
@@ -17,6 +22,16 @@ ERROR_CODE_STATUS: dict = {
     UnboundLocalError : 400,
     ValueError : 400
 }
+
+def get_sample_items(sub_category: str) -> str:
+    items = get_category_data(sub_category)
+    item_sample = sample(items,4)
+    return item_sample
+
+def get_random_category(category: str) -> str:
+    categories = CATEGORIES[:]
+    categories.remove(category)
+    return choice(categories)
 
 def get_category_data(category:str) -> json:
     with open(f"data/{category}.json",'r') as f:
@@ -44,14 +59,15 @@ def about():
 @app.route("/<category>/<id>")
 def augments(category, id):
     category = category
-    
     elements = get_category_data(category)
 
     for element in elements:
         if(element["id"] == int(id)):
             item = element
 
-    return render_template("augments.html", item=item, category=category)
+    sub_category = get_random_category(category)
+    items = get_sample_items(sub_category)
+    return render_template("augments.html", item=item, category=category, sub_category=sub_category, items=items)
 
 @app.route("/error/<id_error>")
 def error_handler(id_error):

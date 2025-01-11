@@ -58,6 +58,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="title_1">
+                    <h2>Additonal Items</h2>
+                    <hr>
+                    <div class="block_selector">
+                        {% for item in items %}
+                            <a class="item" href="{{ url_for('augments', category=sub_category, id=item.id) }}">
+                                <img src="../static/resources/{{sub_category}}/logo/{{ item.img_logo }}">
+                                <p>{{ item.name }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
             </main>
 
             <footer>
