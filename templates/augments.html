@@ -3,6 +3,7 @@
 
     <head>
         <title>{{ item.name }}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../static/CSS/base.css">
         <link rel="stylesheet" href="../static/CSS/augments.css">
     </head>
@@ -14,7 +15,15 @@
             </header>
 
             <main>
-                <h1>{{ item.name }}</h1>
+                <div id="title-head">
+                    <h1>{{ item.name }}</h1>
+                    <div id="descrition-head">
+                        <form action="{{ url_for('item_selector', category=category, id=item.id) }}" method="POST">
+                            <button class="control-button" type="submit" name="value" value="-1"><i class='fa fa-angle-left' style="font-size: 24px;"></i></button>
+                            <button class="control-button" type="submit" name="value" value="1"><i class='fa fa-angle-right' style="font-size: 24px;"></i></button>
+                        </form>
+                    </div>
+                </div>
                 <hr>
                 <div id="sub-menu">
                     <img src="../static/resources/{{ category }}/wallpaper/{{ item.img_wallpaper }}">

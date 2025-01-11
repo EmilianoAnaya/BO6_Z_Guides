@@ -23,9 +23,9 @@ ERROR_CODE_STATUS: dict = {
     ValueError : 400
 }
 
-def get_sample_items(sub_category: str) -> str:
+def get_sample_items(sub_category: str, sample_size:int) -> list:
     items = get_category_data(sub_category)
-    item_sample = sample(items,4)
+    item_sample = sample(items,sample_size)
     return item_sample
 
 def get_random_category(category: str) -> str:
@@ -58,15 +58,16 @@ def about():
 
 @app.route("/<category>/<id>")
 def augments(category, id):
+    id = int(id)
     category = category
     elements = get_category_data(category)
 
     for element in elements:
-        if(element["id"] == int(id)):
+        if(element["id"] == id):
             item = element
 
     sub_category = get_random_category(category)
-    items = get_sample_items(sub_category)
+    items = get_sample_items(sub_category,4)
     return render_template("augments.html", item=item, category=category, sub_category=sub_category, items=items)
 
 @app.route("/error/<id_error>")
@@ -75,6 +76,21 @@ def error_handler(id_error):
     if msg == None:
         msg = "Unauthorized" 
     return render_template("error.html", msg=msg)
+
+@app.route("/select_item/<category>/<id>", methods=['POST'])
+def item_selector(category,id):
+    id = int(id)
+    category = category
+    elements = get_category_data(category)
+
+    new_index = id + int(request.form["value"])
+
+    if new_index > len(elements):
+        new_index = 1
+    elif new_index < 1:
+        new_index = len(elements)
+
+    return redirect(url_for('augments', category=category, id=new_index))
 
 @app.errorhandler(Exception)
 def exception_hanlder(e):
