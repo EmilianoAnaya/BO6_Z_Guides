@@ -16,8 +16,18 @@ A personal Flask project that contains guides discovered by the BO6 Zombies Comm
     <img src="https://github.com/user-attachments/assets/2b25450d-dda6-4c2c-9292-5f67b3bf496f" alt="Augments Screen for Perks, Ammo Mods and Field Upgrades"/>
 </div>
 
-## Tools Screen with the Beamsmasher screen
+## Tools Screen
+### Initial Screen
 <div align="center">
     <img src="https://github.com/user-attachments/assets/845b35f7-68da-458d-963b-46ccc7f9377b" alt="Main Tools Screen"/>
-    <img src="https://github.com/user-attachments/assets/0ce7cf01-69ee-41f1-b5da-3f69efb2139c" alt="Beamsmasher Screen"/>
+</div>
+
+### Beamsmasher Screen
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e132c2f1-f68e-4e5a-ac3c-85d1de618f50" alt="Beamsmasher Screen"/>
+</div>
+
+### Balmung Symbols
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/beb93928-1bbb-41bb-a946-32b458786d95" alt="Balmung Symbols"/>
 </div>
