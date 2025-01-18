@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="../static/CSS/base.css">
+        <link rel="stylesheet" href="../static/CSS/tools.css">
+        <script src="../static/JS/tools.js"></script>
+    </head>
+
+    <body>
+        <div id="main_div">
+            <header>
+                {% include 'header.html' %}
+            </header>
+            
+            <main>
+                <div id="main-container">
+                    <div id="toolbox-container">
+                        <h2>Toolbox</h2>
+                        <hr>
+                        <div id="toolbox">
+                            <div class="main-item" id="Terminus">
+                                <button class="item-header" onclick="open_close('Terminus')">
+                                    <img src="../static/resources/svg/chevron-right.svg" alt="right-arrow">
+                                    <span>Terminus</span>
+                                </button>
+
+                                <div class="item-content-container">
+                                    <button class="item-content">
+                                        <img src="../static/resources/svg/dot.svg" alt="dot">
+                                        <span>Beamsmasher Equation</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="main-item" id="Citadelle_des_morts">
+                                <button class="item-header" onclick="open_close('Citadelle_des_morts')">
+                                    <img src="../static/resources/svg/chevron-right.svg" alt="right-arrow">
+                                    <span>Citadelle Des Morts</span>
+                                </button>
+
+                                <div class="item-content-container">
+                                    <button class="item-content">
+                                        <img src="../static/resources/svg/dot.svg" alt="dot">
+                                        <span>Balmung Symbols</span>
+                                    </button>
+
+                                    <button class="item-content">
+                                        <img src="../static/resources/svg/dot.svg" alt="dot">
+                                        <span>Wall Symbols</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="tool-view-container">
+                        <h2 id="title-tool">Tool Selection</h2>
+                        <hr>
+                        <div id="tool-info-container">
+                            <h1>Select a Tool from the Toolbox</h1>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                {% include 'footer.html' %}
+            </footer>
+        </div>
+    </body>
+
+</html>

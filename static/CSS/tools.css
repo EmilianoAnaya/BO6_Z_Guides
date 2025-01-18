@@ -1,0 +1,104 @@
+#main-container{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+/* TOOLS BAR */
+
+#toolbox-container{
+    width: 30%;
+}
+
+#toolbox{
+    height: auto;
+    background-color: red;
+    border-radius: 20px;
+    border: 0.2em solid black;
+    overflow: hidden;
+}
+
+.main-item{
+    height: auto;
+    width: 100%;
+    background-color: green;
+}
+
+.item-header{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    background-color: #1A694D;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.item-header:hover{
+    background-color: #20647C;
+}
+
+.item-header img{
+    width: 30px;
+    height: 30px;
+    rotate: 0deg;
+    transition: rotate 0.3s;
+}
+
+.item-content-container{
+    background-color: #1E2714;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+    transition-timing-function: ease;
+}
+
+.item-content{
+    display: flex;
+    gap: 10px;
+    background-color: inherit;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.item-content img{
+    width: 30px;
+    height: 30px;
+}
+
+.item-content:hover{
+    background-color: #577039;
+}
+
+
+/* MAIN-CONTENT */
+
+#tool-view-container{
+    width: 75%;
+}
+
+#tool-info-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tool-info-container h1{
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-left: 0;
+}
+
+/* TEXT */
+span{
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -23,6 +23,8 @@ ERROR_CODE_STATUS: dict = {
     ValueError : 400
 }
 
+# FUNCTIONS
+
 def get_category_data(category:str) -> json:
     with open(f"data/{category}.json",'r') as f:
         data = json.load(f)
@@ -43,6 +45,8 @@ def get_random_category(category: str) -> list[str,str]:
     categories = CATEGORIES[:]
     categories.remove(category)
     return categories
+
+# PAGES
 
 @app.route("/")
 def home():
@@ -75,12 +79,12 @@ def augments(category, id):
     adittional_items = get_sample_items(sub_categories,4)
     return render_template("augments.html", item=item, category=category, adittional_items=adittional_items)
 
-@app.route("/error/<id_error>")
-def error_handler(id_error):
-    msg = ERROR_MESSAGES.get(int(id_error))
-    if msg == None:
-        msg = "Unauthorized" 
-    return render_template("error.html", msg=msg)
+
+@app.route("/tools")
+def tools():
+    return render_template("tools.html")
+
+# POST ROUTES
 
 @app.route("/select_item/<category>/<id>", methods=['POST'])
 def item_selector(category,id):
@@ -97,6 +101,15 @@ def item_selector(category,id):
 
     return redirect(url_for('augments', category=category, id=new_index))
 
+# ERROR HANLDERS
+
+@app.route("/error/<id_error>")
+def error_handler(id_error):
+    msg = ERROR_MESSAGES.get(int(id_error))
+    if msg == None:
+        msg = "Unauthorized" 
+    return render_template("error.html", msg=msg)
+
 @app.errorhandler(Exception)
 def exception_hanlder(e):
     id_error = ERROR_CODE_STATUS.get(type(e))
@@ -106,6 +119,8 @@ def exception_hanlder(e):
 def page_not_found(e):
     id_error=404
     return redirect(url_for('error_handler',id_error=id_error))
+
+# MAIN
 
 if __name__ == "__main__":
     app.run(debug=True)

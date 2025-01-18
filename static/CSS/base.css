@@ -79,3 +79,8 @@ p{
     font-family: var(--MAIN-FONT);
     color: white;
 }
+
+span{
+    font-family: var(--MAIN-FONT);
+    color: white;
+}
