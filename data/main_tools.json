@@ -1,0 +1,26 @@
+{
+    "main_tools" : [
+        {
+            "main_name" : "Terminus",
+            "tools" : [
+                {
+                    "name" : "Beamsmasher Equation",
+                    "html_resource" : ""
+                }
+            ]
+        },
+        {
+            "main_name" : "Citadelle Des Morts",
+            "tools" : [
+                {
+                    "name" : "Balmung Symbols",
+                    "html_resource" : ""
+                },
+                {
+                    "name" : "Wall Symbols",
+                    "html_resource" : ""
+                }
+            ]
+        }
+    ]
+}

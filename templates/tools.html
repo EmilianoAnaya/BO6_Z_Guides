@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <link rel="stylesheet" href="../static/CSS/base.css">
@@ -19,47 +19,37 @@
                         <h2>Toolbox</h2>
                         <hr>
                         <div id="toolbox">
-                            <div class="main-item" id="Terminus">
-                                <button class="item-header" onclick="open_close('Terminus')">
+                            {% for item in main_items %}
+
+                            <div class="main-item" id="{{ item.main_name }}">
+                                <button class="item-header" onclick="open_close('{{ item.main_name }}')">
                                     <img src="../static/resources/svg/chevron-right.svg" alt="right-arrow">
-                                    <span>Terminus</span>
+                                    <span>{{ item.main_name }}</span>
                                 </button>
 
                                 <div class="item-content-container">
+                                    {% for tool in item.tools %}
+                                    
                                     <button class="item-content">
                                         <img src="../static/resources/svg/dot.svg" alt="dot">
-                                        <span>Beamsmasher Equation</span>
+                                        <span>{{ tool.name }}</span>
                                     </button>
+                                    
+                                    {% endfor %}
                                 </div>
                             </div>
 
-                            <div class="main-item" id="Citadelle_des_morts">
-                                <button class="item-header" onclick="open_close('Citadelle_des_morts')">
-                                    <img src="../static/resources/svg/chevron-right.svg" alt="right-arrow">
-                                    <span>Citadelle Des Morts</span>
-                                </button>
-
-                                <div class="item-content-container">
-                                    <button class="item-content">
-                                        <img src="../static/resources/svg/dot.svg" alt="dot">
-                                        <span>Balmung Symbols</span>
-                                    </button>
-
-                                    <button class="item-content">
-                                        <img src="../static/resources/svg/dot.svg" alt="dot">
-                                        <span>Wall Symbols</span>
-                                    </button>
-                                </div>
-                            </div>
+                            {% endfor %}
                             
                         </div>
                     </div>
+                    
                     <div id="tool-view-container">
                         <h2 id="title-tool">Tool Selection</h2>
                         <hr>
                         <div id="tool-info-container">
-                            <h1>Select a Tool from the Toolbox</h1>
-                            <hr>
+                            <!-- <h1>Select a Tool from the Toolbox</h1> -->
+                            <!-- <hr> -->
                         </div>
                     </div>
                 </div>

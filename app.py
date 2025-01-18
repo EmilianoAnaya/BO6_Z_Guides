@@ -82,7 +82,9 @@ def augments(category, id):
 
 @app.route("/tools")
 def tools():
-    return render_template("tools.html")
+    main_items = get_category_data("main_tools")
+
+    return render_template("tools.html", main_items=main_items)
 
 # POST ROUTES
 
