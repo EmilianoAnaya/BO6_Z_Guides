@@ -4,6 +4,7 @@
     <head>
         <link rel="stylesheet" href="../static/CSS/base.css">
         <link rel="stylesheet" href="../static/CSS/tools.css">
+        <link rel="stylesheet" href="../static/CSS/beamsmasher_equation.css">
         <script src="../static/JS/tools.js"></script>
     </head>
 
@@ -45,11 +46,75 @@
                     </div>
                     
                     <div id="tool-view-container">
-                        <h2 id="title-tool">Tool Selection</h2>
+                        <h2 id="title-tool">Beamsmasher Equation</h2>
                         <hr>
-                        <div id="tool-info-container">
-                            <!-- <h1>Select a Tool from the Toolbox</h1> -->
-                            <!-- <hr> -->
+                        <div class="tool-info-container" id="Beamsmasher-Equation">
+                            <!-- <h1>Select a Tool from the Toolbox</h1>
+                            <hr> -->
+                            <div id="chalkboard-container">
+                                <div class="chalkboard-row">    
+                                    <div class="chalkboard-number-cell">0.</div>
+                                    <div class="chalkboard-2-4-space"></div>
+                                    <div class="chalkboard-symbol-cell">
+                                        <img src="../static/resources/tools_resources/terminus/symbols-01.jpg" alt="symbol-00">
+                                    </div>
+                                </div>
+
+                                <div class="chalkboard-row">
+                                    <div class="chalkboard-number-cell">1.</div>
+                                    <div class="chalkboard-2-3-space"></div>
+                                    <div class="chalkboard-symbol-cell">
+                                        <img src="../static/resources/tools_resources/terminus/symbols-03.jpg" alt="symbol-11">
+                                    </div>
+                                    <div class="chalkboard-symbol-cell">
+                                        <img src="../static/resources/tools_resources/terminus/symbols-02.jpg" alt="symbol-10">
+                                    </div>
+                                </div>
+
+                                <div class="chalkboard-row">
+                                    <div class="chalkboard-number-cell">2.</div>
+                                    <div class="chalkboard-symbol-cell">
+                                        <img src="../static/resources/tools_resources/terminus/symbols-06.jpg" alt="symbol-22">
+                                    </div>
+                                    <div class="chalkboard-symbol-cell">
+                                        <img src="../static/resources/tools_resources/terminus/symbols-05.jpg" alt="symbol-21">
+                                    </div>
+                                    <div class="chalkboard-symbol-cell">
+                                        <img src="../static/resources/tools_resources/terminus/symbols-04.jpg" alt="symbol-20">
+                                    </div>
+                                </div>
+
+                                <div class="chalkboard-row empty">
+                                    <div class="chalkboard-1-2"></div>
+                                    <div class="chalkboard-number-cell empty">2.</div>
+                                    <div class="chalkboard-number-cell empty">1.</div>
+                                    <div class="chalkboard-number-cell empty">0.</div>
+                                </div>
+                            </div>
+
+                            <div id="variables-container">
+                                <div class="variable-item">
+                                    <div class="variable x" id="x_value">X</div>
+                                    <button class="beamsmasher-button">SET</button>
+                                </div>
+                                <div class="variable-item">
+                                    <div class="variable y" id="y_value">Y</div>
+                                    <button class="beamsmasher-button">SET</button>
+                                </div>
+                                <div class="variable-item">
+                                    <div class="variable z" id="z_value">Z</div>
+                                    <button class="beamsmasher-button">SET</button>
+                                </div>
+                            </div>
+
+                            <div id="answer-variables">
+                                <span id="1">- -</span>
+                                <span id="2">- -</span>
+                                <span id="3">- -</span>
+                            </div>
+
+                            <button id="reset" class="beamsmasher-button">RESET</button>
+
                         </div>
                     </div>
                 </div>
