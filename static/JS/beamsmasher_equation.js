@@ -49,9 +49,9 @@ function set_initial_index(value){
 }
 
 function solve_equations(x, y, z){
-    let ans1 = 2*x + 11
-    let ans2 = (2*z + y) - 5
-    let ans3 = Math.abs((y + z) - x)
+    let ans1 = (2*x + 11).toString().padStart(2,'0')
+    let ans2 = ((2*z + y) - 5).toString().padStart(2,'0')
+    let ans3 = (Math.abs((y + z) - x)).toString().padStart(2,'0')
 
     return [ans1, ans2, ans3]
 }
