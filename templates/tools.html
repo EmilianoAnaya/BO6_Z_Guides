@@ -48,73 +48,76 @@
                     <div id="tool-view-container">
                         <h2 id="title-tool">Beamsmasher Equation</h2>
                         <hr>
-                        <div class="tool-info-container" id="Beamsmasher-Equation">
+                        <div class="tool-info-container">
                             <!-- <h1>Select a Tool from the Toolbox</h1>
                             <hr> -->
-                            <div id="chalkboard-container">
-                                <div class="chalkboard-row">    
-                                    <div class="chalkboard-number-cell">0.</div>
-                                    <div class="chalkboard-2-4-space"></div>
-                                    <div class="chalkboard-symbol-cell">
-                                        <img src="../static/resources/tools_resources/terminus/symbols-01.jpg" alt="symbol-00">
+                            <div id="Beamsmasher-Equation">
+                                <div id="chalkboard-container">
+                                    <script src="../static/JS/beamsmasher_equation.js"></script>
+
+                                    <div class="chalkboard-row">    
+                                        <div class="chalkboard-number-cell">0.</div>
+                                        <div class="chalkboard-2-4-space"></div>
+                                        <div class="chalkboard-symbol-cell">
+                                            <img src="../static/resources/tools_resources/terminus/symbols-01.jpg" alt="symbol-00" onclick="calculate_equations(0)">
+                                        </div>
+                                    </div>
+
+                                    <div class="chalkboard-row">
+                                        <div class="chalkboard-number-cell">1.</div>
+                                        <div class="chalkboard-2-3-space"></div>
+                                        <div class="chalkboard-symbol-cell">
+                                            <img src="../static/resources/tools_resources/terminus/symbols-03.jpg" alt="symbol-11" onclick="calculate_equations(11)">
+                                        </div>
+                                        <div class="chalkboard-symbol-cell">
+                                            <img src="../static/resources/tools_resources/terminus/symbols-02.jpg" alt="symbol-10" onclick="calculate_equations(10)">
+                                        </div>
+                                    </div>
+
+                                    <div class="chalkboard-row">
+                                        <div class="chalkboard-number-cell">2.</div>
+                                        <div class="chalkboard-symbol-cell">
+                                            <img src="../static/resources/tools_resources/terminus/symbols-06.jpg" alt="symbol-22" onclick="calculate_equations(22)">
+                                        </div>
+                                        <div class="chalkboard-symbol-cell">
+                                            <img src="../static/resources/tools_resources/terminus/symbols-05.jpg" alt="symbol-21" onclick="calculate_equations(21)">
+                                        </div>
+                                        <div class="chalkboard-symbol-cell">
+                                            <img src="../static/resources/tools_resources/terminus/symbols-04.jpg" alt="symbol-20" onclick="calculate_equations(20)">
+                                        </div>
+                                    </div>
+
+                                    <div class="chalkboard-row empty">
+                                        <div class="chalkboard-1-2"></div>
+                                        <div class="chalkboard-number-cell empty">2.</div>
+                                        <div class="chalkboard-number-cell empty">1.</div>
+                                        <div class="chalkboard-number-cell empty">0.</div>
                                     </div>
                                 </div>
 
-                                <div class="chalkboard-row">
-                                    <div class="chalkboard-number-cell">1.</div>
-                                    <div class="chalkboard-2-3-space"></div>
-                                    <div class="chalkboard-symbol-cell">
-                                        <img src="../static/resources/tools_resources/terminus/symbols-03.jpg" alt="symbol-11">
+                                <div id="variables-container">
+                                    <div class="variable-item">
+                                        <div class="variable x" id="x_value">X</div>
+                                        <button class="beamsmasher-button" onclick="set_initial_index(0)">SET</button>
                                     </div>
-                                    <div class="chalkboard-symbol-cell">
-                                        <img src="../static/resources/tools_resources/terminus/symbols-02.jpg" alt="symbol-10">
+                                    <div class="variable-item">
+                                        <div class="variable y" id="y_value">Y</div>
+                                        <button class="beamsmasher-button" onclick="set_initial_index(1)">SET</button>
                                     </div>
-                                </div>
-
-                                <div class="chalkboard-row">
-                                    <div class="chalkboard-number-cell">2.</div>
-                                    <div class="chalkboard-symbol-cell">
-                                        <img src="../static/resources/tools_resources/terminus/symbols-06.jpg" alt="symbol-22">
-                                    </div>
-                                    <div class="chalkboard-symbol-cell">
-                                        <img src="../static/resources/tools_resources/terminus/symbols-05.jpg" alt="symbol-21">
-                                    </div>
-                                    <div class="chalkboard-symbol-cell">
-                                        <img src="../static/resources/tools_resources/terminus/symbols-04.jpg" alt="symbol-20">
+                                    <div class="variable-item">
+                                        <div class="variable z" id="z_value">Z</div>
+                                        <button class="beamsmasher-button" onclick="set_initial_index(2)">SET</button>
                                     </div>
                                 </div>
 
-                                <div class="chalkboard-row empty">
-                                    <div class="chalkboard-1-2"></div>
-                                    <div class="chalkboard-number-cell empty">2.</div>
-                                    <div class="chalkboard-number-cell empty">1.</div>
-                                    <div class="chalkboard-number-cell empty">0.</div>
+                                <div id="answer-variables">
+                                    <span id="ans1">- -</span>
+                                    <span id="ans2">- -</span>
+                                    <span id="ans3">- -</span>
                                 </div>
+
+                                <button id="reset" class="beamsmasher-button" onclick="reset_all()">RESET</button>
                             </div>
-
-                            <div id="variables-container">
-                                <div class="variable-item">
-                                    <div class="variable x" id="x_value">X</div>
-                                    <button class="beamsmasher-button">SET</button>
-                                </div>
-                                <div class="variable-item">
-                                    <div class="variable y" id="y_value">Y</div>
-                                    <button class="beamsmasher-button">SET</button>
-                                </div>
-                                <div class="variable-item">
-                                    <div class="variable z" id="z_value">Z</div>
-                                    <button class="beamsmasher-button">SET</button>
-                                </div>
-                            </div>
-
-                            <div id="answer-variables">
-                                <span id="1">- -</span>
-                                <span id="2">- -</span>
-                                <span id="3">- -</span>
-                            </div>
-
-                            <button id="reset" class="beamsmasher-button">RESET</button>
-
                         </div>
                     </div>
                 </div>

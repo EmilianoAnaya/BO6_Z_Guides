@@ -92,10 +92,6 @@
     cursor: pointer;
 }
 
-#chalkboard-container img:hover{
-    background-color: red;
-}
-
 /* VARIABLES AREA */
 
 #variables-container{
@@ -141,11 +137,15 @@
 }
 
 #answer-variables span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--MAIN-FONT);
     font-size: 2em;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 0.5em 1em;
+    width: 100px;
+    height: 82px;
 }
 
 /* RESPONSIVE */
