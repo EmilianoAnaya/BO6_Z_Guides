@@ -27,6 +27,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         img.addEventListener("mouseout", function() {
             img.style.backgroundColor = "transparent";
         });
+
+        img.addEventListener("mousedown", function() {
+            console.log("Imagen presionada:", this);
+            img.style.backgroundColor = "#1A694D";
+        });
+
+        img.addEventListener("mouseup", function() {
+            let tmp_index = initial_index>1 ? 0 : initial_index+1
+            img.style.backgroundColor = MARGIN_COLORS[tmp_index];
+        });
     });
 });
 

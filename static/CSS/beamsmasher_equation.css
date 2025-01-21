@@ -1,6 +1,6 @@
 #Beamsmasher-Equation{
     flex-direction: column;
-    background-image: url("../resources/tools_resources/terminus/terminus_chalkboard.jpg");
+    background-color: #6a7555;
     background-position: center;
     border-radius: 20px;
     padding: 5% 10px;
@@ -15,6 +15,7 @@
     font-family: var(--MAIN-FONT);
     font-size: 1.2em;
     color: white;
+    user-select: none;
     
     width: 4em;
     
@@ -90,6 +91,7 @@
     padding: 10px;
     background-color: transparent;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 /* VARIABLES AREA */
