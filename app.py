@@ -1,6 +1,6 @@
 import json
-from random import choice, sample, shuffle
-from flask import Flask, render_template, url_for, request, redirect
+from random import sample
+from flask import Flask, render_template, url_for, request, redirect, jsonify
 
 
 app = Flask(__name__)
@@ -83,8 +83,15 @@ def augments(category, id):
 @app.route("/tools")
 def tools():
     main_items = get_category_data("main_tools")
-
     return render_template("tools.html", main_items=main_items)
+
+
+@app.route("/fetch_tool_item")
+def get_tool():
+    beamsmasher_equations = render_template("beamsmasher_equation.html")
+    return jsonify({
+        "beamsmasher_equation" : beamsmasher_equations
+    })
 
 # POST ROUTES
 

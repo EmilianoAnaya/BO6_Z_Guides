@@ -4,6 +4,7 @@
             "main_name" : "Terminus",
             "tools" : [
                 {
+                    "id" : "beamsmasher_equation",
                     "name" : "Beamsmasher Equation",
                     "html_resource" : ""
                 }
