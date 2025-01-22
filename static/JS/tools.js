@@ -14,11 +14,7 @@ function fetch_tool_item(item_id, title_tool){
         script.id = item_id
 
         script.onload = function() {
-            if (typeof setup === "function") {
-                setup(item_id);
-            } else {
-                console.error("Error: setup() no está definido después de cargar el script.");
-            }
+            if (typeof setup === "function") setup(item_id)
         };
         
         document.body.appendChild(script)

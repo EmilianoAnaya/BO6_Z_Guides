@@ -16,6 +16,7 @@
     font-size: 1.2em;
     color: white;
     user-select: none;
+    -webkit-user-drag: none;
     
     width: 4em;
     
@@ -64,6 +65,8 @@
     font-size: 3em;
     font-family: var(--FONT-CALLIGRAFFITTI);
     border-right: 2px solid black;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .chalkboard-number-cell.empty{
@@ -92,6 +95,8 @@
     background-color: transparent;
     cursor: pointer;
     border-radius: 20px;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 /* VARIABLES AREA */
@@ -115,6 +120,8 @@
     height: 80px;
     font-family: var(--MAIN-FONT);
     font-size: 60px;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .variable.x{
@@ -148,6 +155,8 @@
     border-bottom: 2px solid black;
     width: 100px;
     height: 82px;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 /* RESPONSIVE */
