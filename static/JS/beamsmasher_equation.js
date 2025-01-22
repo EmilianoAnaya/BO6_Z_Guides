@@ -1,12 +1,23 @@
 
-let array_items = [1,1,1]
-let initial_index = 0
-let ANSWERS, BOX_VARIABLES, CHALKBOARD
+if (typeof array_items === "undefined") {
+    var array_items;
+}
+if (typeof initial_index === "undefined") {
+    var initial_index;
+}
+if (typeof ANSWERS === "undefined") {
+    var ANSWERS, BOX_VARIABLES, CHALKBOARD;
+}
+if (typeof MARGIN_COLORS === "undefined") {
+    var MARGIN_COLORS = ["#FF4747", "#47ACFF", "#F2FF38"];
+}
+if (typeof BOX_TEXT === "undefined") {
+    var BOX_TEXT = ["X", "Y", "Z"];
+}
 
-const MARGIN_COLORS = ["#FF4747","#47ACFF","#F2FF38"]
-const BOX_TEXT = ["X","Y","Z"]
+function setup(key){
+    if(key != "beamsmasher_equation") return
 
-document.addEventListener('DOMContentLoaded', (event) => {
     ANSWERS = [
         document.getElementById("ans1"),
         document.getElementById("ans2"),
@@ -44,7 +55,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             event.target.style.backgroundColor = MARGIN_COLORS[tmp_index];
         }
     });
-});
+
+    reset_all()
+}
+
 
 function reset_all(){
     array_items = [1,1,1]

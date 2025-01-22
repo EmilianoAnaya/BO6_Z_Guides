@@ -88,9 +88,10 @@ def tools():
 
 @app.route("/fetch_tool_item")
 def get_tool():
-    beamsmasher_equations = render_template("beamsmasher_equation.html")
+    id_tool = request.args.get("id_tool")
+    tool = render_template(f"{id_tool}.html")
     return jsonify({
-        "beamsmasher_equation" : beamsmasher_equations
+        "tool" : tool
     })
 
 # POST ROUTES
