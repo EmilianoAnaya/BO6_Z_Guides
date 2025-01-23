@@ -323,6 +323,42 @@
                     "description" : "On death, zombies have a higher chance of dropping your current equipment."
                 }
             ]
+        },
+        {
+            "id" : 10,
+            "name" : "Death Perception",
+            "description" : "Detect enemies through obstacles and walls via outlines of their bodies.",
+            "category" : "perks",
+            "img_logo" : "death_perception_perk.png",
+            "img_wallpaper" : "death_perception.jpg",
+            "major_augments" : [
+                {
+                    "title" : "Treasure Hunter",
+                    "description" : "Spot items others can miss from loot containers as well as Special and Elite kills."
+                },
+                {
+                    "title" : "Death Stare",
+                    "description" : "Your Elemental Weakness damage has a chance to kill an enemy that is low on health."
+                },
+                {
+                    "title" : "Critical Eye",
+                    "description" : "Small chance that a body shot becomes a critical shot."
+                }
+            ],
+            "minor_augments" : [
+                {
+                    "title" : "Bird's Eye View",
+                    "description" : "The minimap's scan rate is increased."
+                },
+                {
+                    "title" : "Extra Change",
+                    "description" : "Find extra Essence under more locations."
+                },
+                {
+                    "title" : "Further Insight",
+                    "description" : "Increase perception radius."
+                }
+            ]
         }
     ]
 }
