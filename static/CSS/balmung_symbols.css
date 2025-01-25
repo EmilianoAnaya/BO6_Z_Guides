@@ -1,0 +1,75 @@
+:root{
+    --BORDER-RADIUS: 30px
+}
+
+#Balmung-Symbols{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0C0C0C;
+    background-position: center;
+    border-radius: 20px;
+    padding: 5% 10px;
+    width: 95%;
+    height: auto;
+}
+
+#Symbol-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../resources/tools_resources/citadelle_des_morts/symbols_wall_complete.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5em;
+    height: 450px;
+    width: 450px;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+/* ARTIFACT SELECTOR */
+#Artifact-Selector{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 2em;
+}
+
+#Artifact-Selector img{
+    width: 180px;
+    height: 180px;
+    border-radius: var(--BORDER-RADIUS);
+    padding: 1em;
+    cursor: pointer;
+}
+
+#Artifact-Selector img:hover{
+    background-color: #47ACFF;
+}
+
+/* RESET BUTTON */
+
+.balmung-button{
+    background-color: #1A694D;
+
+    font-family: var(--MAIN-FONT);
+    font-size: 1.2em;
+    color: white;
+    user-select: none;
+    -webkit-user-drag: none;
+    
+    width: 6em;
+    
+    border: none;
+    border-radius: 10px;
+
+    margin-top: 1em;
+    box-shadow: 1px 5px 10px #0B1614;
+    cursor: pointer;
+}
+
+.balmung-button:hover{
+    background-color: #47ACFF;
+}
