@@ -17,6 +17,7 @@
 
 #Symbol-Container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../resources/tools_resources/citadelle_des_morts/symbols_wall_complete.png");
@@ -26,6 +27,14 @@
     height: 450px;
     width: 450px;
     border-radius: var(--BORDER-RADIUS);
+}
+
+#Alchemical-Symbol{
+    filter: drop-shadow(0 0 15px #46be4e);
+}
+
+#Zodiac-Symbol{
+    filter: drop-shadow(0 0 15px #1BE7DC);
 }
 
 /* ARTIFACT SELECTOR */
@@ -43,10 +52,16 @@
     border-radius: var(--BORDER-RADIUS);
     padding: 1em;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 #Artifact-Selector img:hover{
     background-color: #47ACFF;
+}
+
+#Artifact-Selector img.selected {
+    background-color: #1A694D;
 }
 
 /* RESET BUTTON */

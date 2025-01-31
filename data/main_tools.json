@@ -5,8 +5,7 @@
             "tools" : [
                 {
                     "id" : "beamsmasher_equation",
-                    "name" : "Beamsmasher Equation",
-                    "html_resource" : ""
+                    "name" : "Beamsmasher Equation"
                 }
             ]
         },
@@ -15,8 +14,7 @@
             "tools" : [
                 {
                     "id" : "balmung_symbols",
-                    "name" : "Balmung Symbols",
-                    "html_resource" : ""
+                    "name" : "Balmung Symbols"
                 }
             ]
         }
